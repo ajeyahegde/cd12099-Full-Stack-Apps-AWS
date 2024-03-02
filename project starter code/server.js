@@ -56,6 +56,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util.js';
       });
 
     } catch(error) {
+      console.error(error)
         return res.status(500).send("Could not filter the image");
     }
   } );
